@@ -1,6 +1,19 @@
 #!/usr/bin/env node
 /**
- * sl0ppy-svg-intel-scan ULTIMATE + Deep Fuzzer + Extended Protocols
+ * sl0ppy-svg-intel-scan Deep Fuzzer + Extended Protocols
+ * Made with beer and precision methods. 
+ * A swis knife for SVG Parsing vulns. 
+ * Finds, chained 
+ * xss lfi
+ * xss xxe
+ * xss ssrf 
+ * xss rce 
+ * --------- 
+ * Seuciry is myth, full stack dominance on your server side. 
+ * Firewalls and parsers are a fraud, they not sanitize deep enough. 
+ * BUrp and other tools make to much noise and are not as effective as this ratio 95% with 5% false positive but rare... 
+ * 
+ ^ Author x0xr00t Aka Patrick Hoogeveen
  * Passive/Active SVG Security Intelligence Scanner
  */
 
