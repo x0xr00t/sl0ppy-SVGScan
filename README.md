@@ -59,6 +59,11 @@ SVG files are often whitelisted as images but can contain executable code, exter
 - Open Redirects  
 
 ---
+## 🛠 Minimal requirements 
+* Node 18+ 
+
+## 🛠 Install dependencies:
+npm install jsdom node-fetch
 
 ## 🛠 Installation
 
