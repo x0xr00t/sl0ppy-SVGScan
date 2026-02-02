@@ -19,7 +19,6 @@ A high-signal **passive + active SVG security scanner** designed to uncover **se
 - Technical Deep Dive  
 - Mitigations  
 - Legal Notice  
-- License
 
 ---
 
