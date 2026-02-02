@@ -1,8 +1,9 @@
-sl0ppy-svg-intel-scan
+## sl0ppy-svg-intel-scan
+```
 Ultimate SVG Security Intelligence Scanner
 Built by x0xr00t for Personal Use
 SVG Security Scanner
-
+```
 📜 Table of Contents
 ```
 Introduction
