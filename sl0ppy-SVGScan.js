@@ -2,7 +2,6 @@
 /**
  * sl0ppy-svg-intel-scan ULTIMATE + Deep Fuzzer + Extended Protocols
  * Passive/Active SVG Security Intelligence Scanner
- * Fixed: Syntax error in regular expression
  */
 
 const readline = require('readline');
