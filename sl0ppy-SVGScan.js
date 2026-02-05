@@ -9,7 +9,7 @@
  * xss ssrf 
  * xss rce 
  * --------- 
- * Seuciry is myth, full stack dominance on your server side. 
+ * Seuciry is myth, full chain dominance on your server side. 
  * Firewalls and parsers are a fraud, they not sanitize deep enough. 
  * BUrp and other tools make to much noise and are not as effective as this ratio 95% with 5% false positive but rare... 
  * 
