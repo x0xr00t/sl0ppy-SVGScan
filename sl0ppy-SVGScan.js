@@ -470,6 +470,31 @@ function testTheoreticalChains(detectedVulnerabilities) {
     possibleChains.push('SVG XXE → Cloud metadata access (AWS/GCP/Azure)');
     possibleChains.push('SVG XXE → Internal file disclosure (/etc/passwd, /etc/shadow)');
     possibleChains.push('SVG XXE → Environment variable leakage (/proc/self/environ)');
+    possibleChains.push('SVG XXE → NTLM Hash Leakage (via UNC paths/SMB)');
+    possibleChains.push('SVG XXE → Java Net-NTLM stealing (via file:// provider)');
+    possibleChains.push('SVG XXE → PHP Expect Wrapper (Remote Code Execution)');
+    possibleChains.push('SVG XXE → Docker API exploitation (via unix socket/http)');
+    possibleChains.push('SVG XXE → Kubernetes Service Account Token leakage');
+    possibleChains.push('SVG XXE → Jenkins/GitLab CI/CD credential theft');
+    possibleChains.push('SVG XXE → Gopher Wrapper SSRF (Bypassing filters)');
+    possibleChains.push('SVG XXE → Database config disclosure (wp-config.php, .env)');
+    possibleChains.push('SVG XXE → Local Port Scanning (SSRF internal fingerprinting)');
+    possibleChains.push('SVG XXE → Denial of Service (Billion Laughs / XML Bomb)');
+    possibleChains.push('SVG XXE → XInclude RCE (via external entity resolution)');
+    possibleChains.push('SVG XXE → SSH Private Key exfiltration (~/.ssh/id_rsa)');
+    possibleChains.push('SVG XXE → NTLM Hash Leakage (via UNC paths/SMB)');
+    possibleChains.push('SVG XXE → Java Net-NTLM stealing (via file:// provider)');
+    possibleChains.push('SVG XXE → PHP Expect Wrapper (Remote Code Execution)');
+    possibleChains.push('SVG XXE → Docker API exploitation (via unix socket/http)');
+    possibleChains.push('SVG XXE → Kubernetes Service Account Token leakage');
+    possibleChains.push('SVG XXE → Jenkins/GitLab CI/CD credential theft');
+    possibleChains.push('SVG XXE → Gopher Wrapper SSRF (Bypassing filters)');
+    possibleChains.push('SVG XXE → Database config disclosure (wp-config.php, .env)');
+    possibleChains.push('SVG XXE → Local Port Scanning (SSRF internal fingerprinting)');
+    possibleChains.push('SVG XXE → Denial of Service (Billion Laughs / XML Bomb)');
+    possibleChains.push('SVG XXE → XInclude RCE (via external entity resolution)');
+    possibleChains.push('SVG XXE → SSH Private Key exfiltration (~/.ssh/id_rsa)');
+
   }
 
   // SSRF Chains
@@ -481,6 +506,45 @@ function testTheoreticalChains(detectedVulnerabilities) {
     possibleChains.push('SVG SSRF → Database access (via SSRF to Redis/MySQL)');
     possibleChains.push('SVG SSRF → Internal service enumeration (http://localhost:22)');
     possibleChains.push('SVG SSRF → AWS IMDSv1 exploitation (http://169.254.169.254/)');
+    possibleChains.push('SVG SSRF → AWS IMDSv2 Token Request (Session Header Bypass)');
+    possibleChains.push('SVG SSRF → Azure MSI Token Endpoint (Managed Identity exfiltration)');
+    possibleChains.push('SVG SSRF → Oracle Cloud (OCI) Instance Principal harvesting');
+    possibleChains.push('SVG SSRF → DigitalOcean Metadata V1/V2 disclosure');
+    possibleChains.push('SVG SSRF → Kubernetes API Server (Kube-Apiserver) discovery');
+    possibleChains.push('SVG SSRF → Kubelet Read-Only Port (10255) pod enumeration');
+    possibleChains.push('SVG SSRF → Etcd Peer-to-Peer API (2380) data dump');
+    possibleChains.push('SVG SSRF → Docker Engine API (Remote Unix Socket via HTTP)');
+    possibleChains.push('SVG SSRF → HashiCorp Vault API Secret retrieval');
+    possibleChains.push('SVG SSRF → Redis RESP Protocol injection (RCE via Crontab)');
+    possibleChains.push('SVG SSRF → Memcached UDP/TCP Command Injection');
+    possibleChains.push('SVG SSRF → MongoDB Web Status Interface (28017) enumeration');
+    possibleChains.push('SVG SSRF → Elasticsearch Node Info & Index mapping extraction');
+    possibleChains.push('SVG SSRF → Apache Solr Admin UI / Core discovery');  
+    possibleChains.push('SVG SSRF → RabbitMQ Management UI credential brute-force');
+    possibleChains.push('SVG SSRF → Jenkins Script Console (RCE via POST-to-SSRF)');
+    possibleChains.push('SVG SSRF → GitLab Internal API / Runners token theft');
+    possibleChains.push('SVG SSRF → Prometheus Metrics Endpoint (Internal system profiling)');
+    possibleChains.push('SVG SSRF → Grafana Local SQLite Database exfiltration');
+    possibleChains.push('SVG SSRF → PHP-FPM FastCGI binary protocol exploitation');
+    possibleChains.push('SVG SSRF → SMB Relay via Gopher wrapper (NTLM capture)');
+    possibleChains.push('SVG SSRF → SMTP Mail Header Injection (Spam/Phishing via SSRF)');
+    possibleChains.push('SVG SSRF → FTP Passive Mode (PORT) internal network pivoting');
+    possibleChains.push('SVG SSRF → PostgreSQL Startup Packet injection');
+    possibleChains.push('SVG SSRF → MySQL Local Infile exfiltration via rogue server SSRF');
+    possibleChains.push('SVG SSRF → JMX Monitoring exploitation (Java Deserialization)');
+    possibleChains.push('SVG SSRF → WebLogic T3/IIOP protocol tunneling');
+    possibleChains.push('SVG SSRF → SAP Router/Management console SSRF pivoting'); 
+    possibleChains.push('SVG SSRF → VMWare ESXi Host Client (902) fingerprinting');
+    possibleChains.push('SVG SSRF → Consul Service Discovery API manipulation');
+    possibleChains.push('SVG SSRF → Nomad Job API (Remote container execution)');
+    possibleChains.push('SVG SSRF → Istio/Envoy Sidecar Proxy config leakage');
+    possibleChains.push('SVG SSRF → Internal Load Balancer (F5/Citrix) stats leakage');
+    possibleChains.push('SVG SSRF → CUPS (Printing) Admin UI RCE chain');
+    possibleChains.push('SVG SSRF → IPMI/BMC Management Web Interface discovery');
+    possibleChains.push('SVG SSRF → Windows RPC/DCOM internal mapping');
+    possibleChains.push('SVG SSRF → UPnP/SSDP device discovery (IoT pivoting)');
+    possibleChains.push('SVG SSRF → Squid Proxy / TinyProxy open relay testing');
+    possibleChains.push('SVG SSRF → Local DNS Resolver Cache Snooping');
   }
 
   // LFI Chains
